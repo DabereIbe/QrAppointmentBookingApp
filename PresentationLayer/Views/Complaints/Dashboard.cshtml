@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+@model List<DataAccessLayer.Data.Models.Complaint>
+
+<div class="container-fluid px-4">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-dark">Complaints</h2>
+        </div>
+        <div class="text-right">
+            <a asp-controller="Complaints" asp-action="LogComplaint" asp-route-matricNumber="@ViewData["MatricNumber"]" class="btn btn-primary btn-float-right">
+                Log Complaint
+            </a>
+        </div>
+    </div>
+    @* <h1 class="mt-4">Dashboard</h1> *@
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Complaints Table
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var complaint in Model)
+                    {
+                        <tr>
+                            <td>@complaint.ComplaintTypeId</td>
+                            <td>@complaint.Description</td>
+                            <td>@(complaint.AssignedStaffId == null ? "Pending" : "Assigned")</td>
+                            <td>
+                                @if (complaint.AssignedStaffId != null)
+                                {
+                                    <a href="@Url.Action("DownloadTicket", "Complaints", new { complaintId = complaint.Id })" target="_blank">Download Ticket</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

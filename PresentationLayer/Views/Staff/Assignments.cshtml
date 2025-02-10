@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Assignments";
+}
+@model List<DataAccessLayer.Data.Models.Complaint>
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Tables</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="index.html">Assignments</a></li>
+        <li class="breadcrumb-item active">Tables</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Unassigned Complaints
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var complaint in Model)
+                    {
+                        <tr>
+                            <td>@complaint.ComplaintTypeId</td>
+                            <td>@complaint.Description</td>
+                            <td>
+                                <form asp-controller="Staff" asp-action="AssignComplaint" method="post">
+                                    <input type="hidden" name="complaintId" value="@complaint.Id" />
+                                    <button type="submit">Assign to Me</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
