@@ -6,12 +6,12 @@ namespace DataAccessLayer.Data.Models;
 
 public class QRVerification
     {
-        [Key]
+        //[Key]
         public int Id { get; set; }
         public string AppointmentId { get; set; }
 
-        [ForeignKey("AppointmentId")]
-        public virtual Appointment Appointment { get; set; }
+        //[ForeignKey("AppointmentId")]
+        public Appointment Appointment { get; set; }
         
         
         public string QRCodeData { get; set; }

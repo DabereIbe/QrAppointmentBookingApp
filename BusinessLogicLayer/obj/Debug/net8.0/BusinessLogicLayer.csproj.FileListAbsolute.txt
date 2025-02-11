@@ -13,3 +13,4 @@ C:\Users\victor madu\Desktop\QrAppointmentBookingApp\BusinessLogicLayer\obj\Debu
 C:\Users\victor madu\Desktop\QrAppointmentBookingApp\BusinessLogicLayer\obj\Debug\net8.0\refint\BusinessLogicLayer.dll
 C:\Users\victor madu\Desktop\QrAppointmentBookingApp\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.pdb
 C:\Users\victor madu\Desktop\QrAppointmentBookingApp\BusinessLogicLayer\obj\Debug\net8.0\ref\BusinessLogicLayer.dll
+C:\Users\victor madu\Desktop\QrAppointmentBookingApp\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.sourcelink.json

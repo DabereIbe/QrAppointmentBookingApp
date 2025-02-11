@@ -37,10 +37,6 @@ namespace DataAccessLayer.Migrations
                     b.Property<DateTime>("AssignedTimeFrame")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ComplaintTypeId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -52,11 +48,13 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AssignedStaffId");
-
-                    b.HasIndex("ComplaintTypeId");
 
                     b.HasIndex("StudentId");
 
@@ -80,52 +78,52 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = "1",
-                            Name = "Networking"
+                            Name = "Network Issue"
                         },
                         new
                         {
                             Id = "2",
-                            Name = "Software Development"
+                            Name = "Portal Login Problem"
                         },
                         new
                         {
                             Id = "3",
-                            Name = "Database Administration"
+                            Name = "Course Registration Error"
                         },
                         new
                         {
                             Id = "4",
-                            Name = "Cybersecurity"
+                            Name = "Result Upload Delay"
                         },
                         new
                         {
                             Id = "5",
-                            Name = "Hardware Repairs"
+                            Name = "Missing Course on Portal"
                         },
                         new
                         {
                             Id = "6",
-                            Name = "Technical Support"
+                            Name = "Email Verification Failure"
                         },
                         new
                         {
                             Id = "7",
-                            Name = "Networking"
+                            Name = "Tuition Payment Issue"
                         },
                         new
                         {
                             Id = "8",
-                            Name = "Software Development"
+                            Name = "Library Access Problem"
                         },
                         new
                         {
                             Id = "9",
-                            Name = "System Analysis"
+                            Name = "Hostel Allocation Issue"
                         },
                         new
                         {
                             Id = "10",
-                            Name = "IT Consulting"
+                            Name = "ID Card Printing Delay"
                         });
                 });
 
@@ -374,12 +372,6 @@ namespace DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DataAccessLayer.Data.Models.ComplaintType", "ComplaintType")
-                        .WithMany()
-                        .HasForeignKey("ComplaintTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("DataAccessLayer.Data.Models.User", "Student")
                         .WithMany()
                         .HasForeignKey("StudentId")
@@ -387,8 +379,6 @@ namespace DataAccessLayer.Migrations
                         .IsRequired();
 
                     b.Navigation("AssignedStaff");
-
-                    b.Navigation("ComplaintType");
 
                     b.Navigation("Student");
                 });

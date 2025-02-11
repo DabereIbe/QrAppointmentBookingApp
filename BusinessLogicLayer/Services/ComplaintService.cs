@@ -31,7 +31,7 @@ public class ComplaintService : IComplaintService
     var complaint = new Complaint
     {
         StudentId = studentId,
-        ComplaintTypeId = type,
+        Type = type,
         Description = description,
         AssignedStaffId = staff.Id,
         AssignedStaff = staff,

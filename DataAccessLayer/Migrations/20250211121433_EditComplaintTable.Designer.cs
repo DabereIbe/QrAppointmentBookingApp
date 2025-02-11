@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250210113718_SeedComplaintTypeTable")]
-    partial class SeedComplaintTypeTable
+    [Migration("20250211121433_EditComplaintTable")]
+    partial class EditComplaintTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,10 +40,6 @@ namespace DataAccessLayer.Migrations
                     b.Property<DateTime>("AssignedTimeFrame")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ComplaintTypeId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -55,11 +51,13 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AssignedStaffId");
-
-                    b.HasIndex("ComplaintTypeId");
 
                     b.HasIndex("StudentId");
 
@@ -377,12 +375,6 @@ namespace DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DataAccessLayer.Data.Models.ComplaintType", "ComplaintType")
-                        .WithMany()
-                        .HasForeignKey("ComplaintTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("DataAccessLayer.Data.Models.User", "Student")
                         .WithMany()
                         .HasForeignKey("StudentId")
@@ -390,8 +382,6 @@ namespace DataAccessLayer.Migrations
                         .IsRequired();
 
                     b.Navigation("AssignedStaff");
-
-                    b.Navigation("ComplaintType");
 
                     b.Navigation("Student");
                 });

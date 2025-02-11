@@ -22,20 +22,20 @@ public class AppDbContext : IdentityDbContext<User>
             base.OnModelCreating(builder);
 
              builder.Entity<ComplaintType>().HasData(
-                new ComplaintType { Id = "1", Name = "Networking" },
-                new ComplaintType { Id = "2", Name = "Software Development" },
-                new ComplaintType { Id = "3", Name = "Database Administration" },
-                new ComplaintType { Id = "4", Name = "Cybersecurity" },
-                new ComplaintType { Id = "5", Name = "Hardware Repairs" },
-                new ComplaintType { Id = "6", Name = "Technical Support" },
-                new ComplaintType { Id = "7", Name = "Networking" },
-                new ComplaintType { Id = "8", Name = "Software Development" },
-                new ComplaintType { Id = "9", Name = "System Analysis" },
-                new ComplaintType { Id = "10",Name = "IT Consulting" }
+                new ComplaintType { Id = "1", Name = "Network Issue" },
+                new ComplaintType { Id = "2", Name = "Portal Login Problem" },
+                new ComplaintType { Id = "3", Name = "Course Registration Error" },
+                new ComplaintType { Id = "4", Name = "Result Upload Delay" },
+                new ComplaintType { Id = "5", Name = "Missing Course on Portal" },
+                new ComplaintType { Id = "6", Name = "Email Verification Failure" },
+                new ComplaintType { Id = "7", Name = "Tuition Payment Issue" },
+                new ComplaintType { Id = "8", Name = "Library Access Problem" },
+                new ComplaintType { Id = "9", Name = "Hostel Allocation Issue" },
+                new ComplaintType { Id = "10", Name = "ID Card Printing Delay" }
             );
 
-            builder.Entity<Staff>()
-            .Property(s => s.ComplaintLimit)
-            .HasDefaultValue(5);
+            // builder.Entity<Staff>()
+            // .Property(s => s.ComplaintLimit)
+            // .HasDefaultValue(5);
         }
     }

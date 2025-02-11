@@ -34,7 +34,7 @@
                     @foreach (var complaint in Model)
                     {
                         <tr>
-                            <td>@complaint.ComplaintTypeId</td>
+                            <td>@complaint.Type</td>
                             <td>@complaint.Description</td>
                             <td>
                                 <form asp-controller="Staff" asp-action="AssignComplaint" method="post">

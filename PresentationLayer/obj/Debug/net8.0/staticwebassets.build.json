@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6iq3y7uHeoRoigbA+42a7MaNp/9HUO06DEcDY9/jvHQ=",
+  "Hash": "NjYSSGKPOPvnz/bX7oOXa+8CPByeG3tV583YBwYGUGs=",
   "Source": "PresentationLayer",
   "BasePath": "_content/PresentationLayer",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\futologo1.jpg"
+    },
+    {
+      "Identity": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\PresentationLayer\\wwwroot\\img\\Ibeakanma Daberechukwu Oluebubechukwu.pptx",
+      "SourceId": "PresentationLayer",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\PresentationLayer\\wwwroot\\",
+      "BasePath": "_content/PresentationLayer",
+      "RelativePath": "img/Ibeakanma Daberechukwu Oluebubechukwu.pptx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Ibeakanma Daberechukwu Oluebubechukwu.pptx"
     },
     {
       "Identity": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\PresentationLayer\\wwwroot\\js\\datatables-simple-demo.js",

@@ -46,6 +46,7 @@ namespace PresentationLayer.Controllers
         [HttpPost]
         public async Task<IActionResult> LogComplaint(ComplaintsModel model)
         {
+            var complaintType = await _complaintService.GetComplaintTypeByIdAsync(model.ComplaintTypeId);
             if (!ModelState.IsValid)
             {
                 return View();
@@ -57,14 +58,19 @@ namespace PresentationLayer.Controllers
             }
             try
             {
-                var complaint = await _complaintService.LogComplaintAsync(userId, model.ComplaintTypeId, model.Description);
+                var complaint = await _complaintService.LogComplaintAsync(userId, complaintType.Name, model.Description);
                 return RedirectToAction("Dashboard");
             }
             catch (Exception ex)
             {
                 ModelState.AddModelError("", ex.Message);
-                return View(model);
+                return RedirectToAction("NotAvailable");
             }
+        }
+
+        public async Task<IActionResult> NotAvailable()
+        {
+            return View();
         }
 
         [HttpPost]

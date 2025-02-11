@@ -18,22 +18,22 @@ public class Complaint
 
     // // Navigation Property
     // public virtual User Student { get; set; }
-    [Key]
+    //[Key]
     public int Id { get; set; }
     public string StudentId { get; set; } = string.Empty; // Foreign key for Student
 
-    [ForeignKey("StudentId")]
-    public virtual User Student { get; set; } // Navigation property
+    // [ForeignKey("StudentId")]
+    public User Student { get; set; } // Navigation property
 
     public string AssignedStaffId { get; set; } // Foreign key for assigned Staff
 
-    [ForeignKey("AssignedStaffId")]
-    public virtual Staff AssignedStaff { get; set; } // Navigation property
+    //[ForeignKey("AssignedStaffId")]
+    public Staff AssignedStaff { get; set; } // Navigation property
 
-    public string ComplaintTypeId { get; set; } = string.Empty;
+    public string Type { get; set; } = string.Empty;
 
-    [ForeignKey("ComplaintTypeId")]
-    public virtual ComplaintType ComplaintType { get; set; }
+    //[ForeignKey("ComplaintTypeId")]
+    //public ComplaintType ComplaintType { get; set; }
     
     
     public string Description { get; set; } = string.Empty;

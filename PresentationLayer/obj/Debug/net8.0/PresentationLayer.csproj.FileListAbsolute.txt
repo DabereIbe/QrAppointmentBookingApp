@@ -455,3 +455,4 @@ C:\Users\victor madu\Desktop\QrAppointmentBookingApp\PresentationLayer\obj\Debug
 C:\Users\victor madu\Desktop\QrAppointmentBookingApp\PresentationLayer\obj\Debug\net8.0\PresentationLayer.genruntimeconfig.cache
 C:\Users\victor madu\Desktop\QrAppointmentBookingApp\PresentationLayer\obj\Debug\net8.0\ref\PresentationLayer.dll
 c:\Users\victor madu\Desktop\QrAppointmentBookingApp\PresentationLayer\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+C:\Users\victor madu\Desktop\QrAppointmentBookingApp\PresentationLayer\obj\Debug\net8.0\PresentationLayer.sourcelink.json
