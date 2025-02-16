@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\victor madu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\victor madu\\AppData\\Roaming\\NuGet\\NuGet.Config"

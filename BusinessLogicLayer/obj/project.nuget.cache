@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jGx7IF1Thgs=",
+  "dgSpecHash": "rL2LX3tbEfs=",
   "success": true,
-  "projectFilePath": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+  "projectFilePath": "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victor madu\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\victor madu\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

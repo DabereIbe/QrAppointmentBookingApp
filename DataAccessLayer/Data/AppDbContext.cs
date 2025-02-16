@@ -33,9 +33,5 @@ public class AppDbContext : IdentityDbContext<User>
                 new ComplaintType { Id = "9", Name = "Hostel Allocation Issue" },
                 new ComplaintType { Id = "10", Name = "ID Card Printing Delay" }
             );
-
-            // builder.Entity<Staff>()
-            // .Property(s => s.ComplaintLimit)
-            // .HasDefaultValue(5);
         }
     }

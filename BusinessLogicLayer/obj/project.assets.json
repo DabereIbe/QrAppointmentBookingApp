@@ -9016,11 +9016,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+      "projectUniqueName": "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
       "projectName": "BusinessLogicLayer",
-      "projectPath": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+      "projectPath": "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
       "packagesPath": "C:\\Users\\victor madu\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\BusinessLogicLayer\\obj\\",
+      "outputPath": "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\BusinessLogicLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\victor madu\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -9035,8 +9035,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "c:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\victor madu\\Desktop\\QrAppointmentBookingApp\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }
